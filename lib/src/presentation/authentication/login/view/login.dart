@@ -176,6 +176,47 @@ class LoginView extends CustomGetView<LoginViewController, LoginViewPresenter> {
                               ),
                             ),
                             const SizedBox(height: 16),
+                            SizedBox(
+                              height: 48,
+                              child: OutlinedButton(
+                                onPressed: presenter.isLoading ? null : () {},
+                                style: OutlinedButton.styleFrom(
+                                  backgroundColor: CustomColors.white,
+                                  foregroundColor: CustomColors.mutedText,
+                                  side: const BorderSide(
+                                    color: CustomColors.inputFill,
+                                  ),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
+                                ),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      width: 22,
+                                      height: 22,
+                                      alignment: Alignment.center,
+                                      decoration: BoxDecoration(
+                                        color: CustomColors.white,
+                                        borderRadius: BorderRadius.circular(6),
+                                        border: Border.all(
+                                          color: CustomColors.inputFill,
+                                        ),
+                                      ),
+                                      child: Image.asset(
+                                        'assets/images/google-logo.png',
+                                        width: 16,
+                                        height: 16,
+                                      ),
+                                    ),
+                                    const SizedBox(width: 12),
+                                    const Text('Continue with Google'),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            const SizedBox(height: 24),
                             Text(
                               translate('login.no_account'),
                               textAlign: TextAlign.center,
