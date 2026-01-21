@@ -1,6 +1,8 @@
 import 'dart:developer';
 import 'package:artists_alley_dashboard/src/config/constants/constants.dart';
+import 'package:artists_alley_dashboard/src/domain/repositories/repositories.dart';
 import 'package:artists_alley_dashboard/src/presentation/presentation.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_translate/flutter_translate.dart';
 import 'package:get/get.dart';
@@ -8,8 +10,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginViewControl implements LoginViewController {
   final LoginViewPresenter _presenter;
+  final AuthenticationRepository _repository;
 
-  LoginViewControl(this._presenter);
+  LoginViewControl(this._presenter, this._repository);
 
   @override
   void togglePasswordVisibility() {
@@ -54,6 +57,17 @@ class LoginViewControl implements LoginViewController {
       // Handle login error (e.g., show error message)
     } finally {
       _presenter.isLoading = false;
+    }
+  }
+
+  @override
+  Future<void> signInWithGoogle() async {
+    try {
+      final UserCredential cred = await _repository.signInWithGoogle();
+      final user = cred.user;
+      log('Signed in: ${user?.email}');
+    } catch (e) {
+      log('Google sign-in failed: $e');
     }
   }
 }

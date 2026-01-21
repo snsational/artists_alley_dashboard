@@ -152,6 +152,9 @@ app.*.symbols
 .gclient_previous_custom_vars
 .gclient_previous_sync_commits
 
-# Trash4Goods
+# Artists Alley Dashboard specific
 *.env
 pubspec.lock
+*google-services.json
+*firebase.json
+*GoogleService-Info.plist
