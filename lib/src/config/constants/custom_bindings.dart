@@ -1,10 +1,9 @@
 import 'package:artists_alley_dashboard/src/communication/communication.dart';
 import 'package:artists_alley_dashboard/src/domain/domain.dart';
 import 'package:artists_alley_dashboard/src/domain/usecases/authentication.dart';
+import 'package:artists_alley_dashboard/src/presentation/presentation.dart';
 import 'package:artists_alley_dashboard/src/utils/watchers/maintenance_watcher.dart';
 import 'package:get/get.dart';
-
-import '../../presentation/authentication/authentication.dart';
 
 class CustomBindings extends Bindings {
   @override
@@ -35,5 +34,9 @@ class CustomBindings extends Bindings {
       () => ForgotPasswordViewPresentation(),
       fenix: true,
     );
+
+    // Dashboard - Home
+    Get.lazyPut<HomeViewController>(() => HomeViewControl(), fenix: true);
+    Get.lazyPut<HomeViewPresenter>(() => HomeViewPresentation(), fenix: true);
   }
 }

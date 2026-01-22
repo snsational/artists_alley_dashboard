@@ -18,5 +18,11 @@ class Pages {
       preventDuplicates: true,
       participatesInRootNavigator: true,
     ),
+    GetPage(
+      name: Routes.dashboard,
+      page: () => const HomeView(),
+      preventDuplicates: true,
+      participatesInRootNavigator: true,
+    ),
   ];
 }

@@ -65,6 +65,8 @@ class LoginViewControl implements LoginViewController {
     try {
       final UserCredential cred = await _repository.signInWithGoogle();
       final user = cred.user;
+
+      Get.rootDelegate.toNamed(Routes.dashboard);
       log('Signed in: ${user?.email}');
     } catch (e) {
       log('Google sign-in failed: $e');
