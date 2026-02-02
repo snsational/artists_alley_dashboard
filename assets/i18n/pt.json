@@ -1,0 +1,33 @@
+{
+	"login" : {
+		"welcome_back" : "Bem-vindo de volta",
+		"sign_in_to_continue" : "Inicia sessão para continuares na Artists Alley.",
+		"email_field" : {
+			"label" : "E-mail",
+			"error_empty" : "O e-mail é obrigatório",
+			"error_invalid" : "Introduz um e-mail válido"
+		},
+		"password_field" : {
+			"label" : "Palavra-passe",
+			"error_empty" : "A palavra-passe é obrigatória",
+			"error_too_short" : "A palavra-passe deve ter pelo menos 6 caracteres"
+		},
+		"google_sign_in_button" : "Continuar com a Google",
+		"forgot_password" : "Esqueceste-te da palavra-passe?",
+		"remember_me" : "Lembrar-me",
+		"sign_in_button" : "Iniciar sessão",
+		"no_account" : "Precisas de acesso? Contacta um administrador."
+	},
+	"forgot_password" : {
+		"title" : "Recuperar a palavra-passe",
+		"subtitle" : "Introduz o teu e-mail e enviaremos um link de reposição.",
+		"email_field" : {
+			"label" : "E-mail",
+			"error_empty" : "O e-mail é obrigatório",
+			"error_invalid" : "Introduz um e-mail válido"
+		},
+		"submit_button" : "Enviar link de reposição",
+		"back_to_login" : "Voltar ao login",
+		"support_text" : "Precisas de ajuda? Contacta um administrador."
+	}
+}

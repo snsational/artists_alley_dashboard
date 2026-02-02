@@ -1,0 +1,33 @@
+{
+	"login" : {
+		"welcome_back" : "Welcome Back",
+		"sign_in_to_continue" : "Sign in to continue to Artists Alley.",
+		"email_field" : {
+			"label" : "Email",
+			"error_empty" : "Email is required",
+			"error_invalid" : "Enter a valid email"
+		},
+		"password_field" : {
+			"label" : "Password",
+			"error_empty" : "Password is required",
+			"error_too_short" : "Password must be at least 6 characters"
+		},
+		"google_sign_in_button" : "Continue with Google",
+		"forgot_password" : "Forgot Password?",
+		"remember_me" : "Remember me",
+		"sign_in_button" : "Sign In",
+		"no_account" : "Need access? Contact your administrator."
+	},
+	"forgot_password" : {
+		"title" : "Forgot Password",
+		"subtitle" : "Enter your email and we'll send you a reset link.",
+		"email_field" : {
+			"label" : "Email",
+			"error_empty" : "Email is required",
+			"error_invalid" : "Enter a valid email"
+		},
+		"submit_button" : "Send Reset Link",
+		"back_to_login" : "Back to login",
+		"support_text" : "Need help? Contact your administrator."
+	}
+}
