@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "staging": "artist-alley-dashboard",
+    "default": "artist-alley-dashboard"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
